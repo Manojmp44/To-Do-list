@@ -122,6 +122,89 @@
             margin-right: 15px;
             cursor: pointer;
         }
+
+        /* Media Queries for Responsiveness */
+        @media (max-width: 768px) {
+            .todo-container {
+                width: 320px;
+                padding: 20px;
+            }
+
+            h1 {
+                font-size: 24px;
+            }
+
+            input[type="text"], button {
+                font-size: 14px;
+            }
+
+            button {
+                padding: 10px 20px;
+            }
+
+            li {
+                padding: 10px;
+                font-size: 14px;
+            }
+
+            input[type="checkbox"] {
+                transform: scale(1.2);
+            }
+        }
+
+        @media (max-width: 480px) {
+            .todo-container {
+                width: 90%;
+                padding: 15px;
+            }
+
+            h1 {
+                font-size: 20px;
+            }
+
+            input[type="text"], button {
+                font-size: 12px;
+                padding: 10px;
+            }
+
+            button {
+                width: 100%;
+            }
+
+            li {
+                font-size: 12px;
+                padding: 8px;
+            }
+
+            input[type="checkbox"] {
+                transform: scale(1.1);
+            }
+        }
+
+        /* For very small screens (portrait mode) */
+        @media (max-width: 375px) {
+            h1 {
+                font-size: 18px;
+            }
+
+            input[type="text"], button {
+                font-size: 12px;
+                padding: 8px;
+            }
+
+            button {
+                width: 100%;
+            }
+
+            li {
+                font-size: 12px;
+                padding: 8px;
+            }
+
+            input[type="checkbox"] {
+                transform: scale(1);
+            }
+        }
     </style>
 </head>
 
